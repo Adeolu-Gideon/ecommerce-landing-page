@@ -16,30 +16,18 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Ecommerce Landing Page</title>
     <style>
-        
-
         .btn-primary {
         color: #fff;
-        background-color: #FD6E4F;
-        border-color: #FD6E4F;
+        background-color: #EE7600;
+        border-color: #EE7600;
         margin: 0 auto;
         }
-        a .name{
-        position: relative;
-        height: 20px; 
-        width: 100%;
-        display: block;
-        overflow: hidden;/*make ul li a .name overflow is hidden*/
+        .nav-link.active {
+        color: #EE7600;
         }
-        /* a .name span:before{
-        content: attr(data-text);
-        position: absolute;
-        top: -100%;
-        width: 100%;
-        left: 0;
-        height: 1005;
-        color: aqua;
-        }  */
+        .nav-link {
+        color: #000000;
+        }    
     </style>
 </head>
 
@@ -89,11 +77,11 @@
     </nav>
     <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none d-xl-none d-md-none">
         <div class="container-fluid">
-            <a class="nav-link text-danger" href="#">
+            <a class="nav-link active" href="#">
                 <i data-feather="home"></i>&nbsp;
                 <div><span data-text="Home">Home</span></div>
             </a>
-            <a class="nav-link text-danger" href="#">
+            <a class="nav-link" href="#">
                 <i data-feather="search"></i>&nbsp;
                 <div><span data-text="Search">Search</span></div>
             </a>
@@ -101,13 +89,13 @@
                 <i data-feather="heart"></i>&nbsp;
                 <div><span data-text="Wishlist">Wishlist</span></div>
             </a> -->
-            <a class="nav-link text-danger" href="#">
+            <a class="nav-link" href="#">
                 <i data-feather="shopping-bag"></i>&nbsp;
                 <div><span data-text="Cart">Cart</span></div>
             </a>
-            <a class="nav-link text-danger" href="#">
+            <a class="nav-link" href="#">
                 <i data-feather="user"></i>
-                <div><span data-text="User">User</span></div>
+                <div><span data-text="User">Login</span></div>
             </a>
         </div>
     </nav>
