@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- icon source file -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <title>Ecommerce Landing</title>
+    <title>Ecommerce Landing Page</title>
     <style>
-        /* .btn-primary {
-        background-color: #d77f81;
-        } */
+        
 
         .btn-primary {
         color: #fff;
@@ -26,20 +24,22 @@
         border-color: #FD6E4F;
         margin: 0 auto;
         }
-        /* #herotitle {
-        color: #384a62;
-        }
-
-        .height {
-        height: 100vh
-        }
-        .nav-link {
+        a .name{
+        position: relative;
+        height: 20px; 
+        width: 100%;
         display: block;
-        padding: 0.5rem 1rem;
-        color: #2b3d49;
-        text-decoration: none;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-        } */
+        overflow: hidden;/*make ul li a .name overflow is hidden*/
+        }
+        /* a .name span:before{
+        content: attr(data-text);
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        left: 0;
+        height: 1005;
+        color: aqua;
+        }  */
     </style>
 </head>
 
@@ -87,12 +87,28 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none d-xl-none">
+    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none d-xl-none d-md-none">
         <div class="container-fluid">
-            <i data-feather="home"></i>&nbsp;
-            <i data-feather="search"></i>&nbsp;
-            <i data-feather="heart"></i>&nbsp;
-            <i data-feather="shopping-bag"></i>
+            <a class="nav-link text-danger" href="#">
+                <i data-feather="home"></i>&nbsp;
+                <div><span data-text="Home">Home</span></div>
+            </a>
+            <a class="nav-link text-danger" href="#">
+                <i data-feather="search"></i>&nbsp;
+                <div><span data-text="Search">Search</span></div>
+            </a>
+            <!-- <a class="nav-link" href="#">
+                <i data-feather="heart"></i>&nbsp;
+                <div><span data-text="Wishlist">Wishlist</span></div>
+            </a> -->
+            <a class="nav-link text-danger" href="#">
+                <i data-feather="shopping-bag"></i>&nbsp;
+                <div><span data-text="Cart">Cart</span></div>
+            </a>
+            <a class="nav-link text-danger" href="#">
+                <i data-feather="user"></i>
+                <div><span data-text="User">User</span></div>
+            </a>
         </div>
     </nav>
 
@@ -148,7 +164,7 @@
 
             </div>
 
-            <div data-aos="fade-down" class="col-12 col-lg-3 col-sm-6">
+            <div data-aos="fade-down" class="col-12 col-lg-3 col-md-6">
                 <div data-aos="fade-down" class="card-body mb-5 shadow">
                     <img src="./images/products/2.jpg" class="d-block mx-lg-auto img-fluid w-full" alt="Product Image" loading="lazy">
                     <h5 class="card-title">Sample Product</h5>
