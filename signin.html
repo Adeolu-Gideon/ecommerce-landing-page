@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/aos.css">
+    <link rel="stylesheet" href="./assets/css/owlcarousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon source file -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Signin Page</title>
+    <style>
+        .btn-primary {
+            color: #fff;
+            background-color: #EE7600;
+            border-color: #EE7600;
+            margin: 0 auto;
+        }
+
+        .nav-link.active {
+            color: #EE7600;
+        }
+
+        .nav-link {
+            color: #000000;
+        }
+
+        #ftcolor {
+            background-color: #FAFAFA;
+        }
+
+        .title {
+            background-color: #f87e03;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Nav Bar -->
+    <nav class="navbar fixed-bottom navbar-light bg-light d-lg-none d-xl-none d-md-none">
+        <div class="container-fluid">
+            <a class="nav-link" href="./index.html">
+                <i data-feather="home"></i>&nbsp;
+                <div><span data-text="Home">Home</span></div>
+            </a>
+            <a class="nav-link" href="#">
+                <i data-feather="search"></i>&nbsp;
+                <div><span data-text="Search">Search</span></div>
+            </a>
+            <!-- <a class="nav-link" href="#">
+                <i data-feather="heart"></i>&nbsp;
+                <div><span data-text="Wishlist">Wishlist</span></div>
+            </a> -->
+            <a class="nav-link" href="./checkout.html">
+                <i data-feather="shopping-bag"></i>&nbsp;
+                <div><span data-text="Cart">Cart</span></div>
+            </a>
+            <a class="nav-link active" href="./signin.html">
+                <i data-feather="user"></i>
+                <div><span data-text="User">Login</span></div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Custom styles for this page -->
+    <link href="./assets/css/signin.css" rel="stylesheet">
+    </head>
+    
+    <body class="text-center">
+    
+        <main class="form-signin">
+            <form>
+                <img class="mb-4" src="./images/logo-icon.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Signin To NovaStore</h1>
+    
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+    
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">&copy; 2022 NovaStore, Inc</p>
+            </form>
+        </main>
+
+            <script src="./bootstrap/js/bootstrap.min.js"></script>
+            <script src="./assets/js/aos/aos.js"></script>
+            <script src="./assets/js/aos/aos-init.js"></script>
+            <script>
+                feather.replace()
+            </script>
+            <script>
+                AOS.init();
+            </script>
+    </body>
+
+</html>
